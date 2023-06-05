@@ -1,0 +1,23 @@
+.falling-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .falling-button {
+    opacity: 0;
+    animation: fall 2s ease-in forwards;
+  }
+  
+  @keyframes fall {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
